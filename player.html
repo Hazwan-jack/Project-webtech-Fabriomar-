@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Fabriomar- Player</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <!-- Favicons -->
+  <link href="assets/img/Fabriomar.png" rel="icon">
+  <link href="assets/img/Fabriomar.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+  
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Fabriomar</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+            <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="matches.html">Matches</a></li>
+            <li><a class="nav-link scrollto" href="shop.html">Shop</a></li>
+            <li><a class="nav-link scrollto active" href="player.html">Player</a></li>
+            <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <!-- ======= PlayerFilter Section ======= -->
+
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  #myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    width: 90%; margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  #myTable {
+    border-collapse: collapse;
+    width: 100%;
+    /*border: 1px solid #ddd;*/
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90%; margin: 0 auto;
+    border-radius:8px;
+  }
+
+  #myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+
+  }
+
+  #myTable tr {
+    /*border-bottom: 1px solid #ddd;*/
+    border-radius:8px;
+  }
+
+  #myTable tr.header, #myTable tr:hover {
+    background-color: #f1f1f1;
+    border-radius:8px;
+  }
+
+  body  {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.player-stats{
+  background-image: url('assets/img/football\ pitch.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+  </style>
+
+
+  </head>
+  <body>
+<div class="player-stats">
+  <br><br><br><br>
+  <!--<div style="display: flex; align-items: center; background-color: rgba(255, 255, 255, 0.5);">-->
+  <div style=" text-align: center; background-color: rgba(255, 255, 255, 0.9);">
+  <h1 style="margin: 0; font-size: 50px; font-weight: bold;" >TOP 30 PLAYERS</h1>
+  </div><br>
+
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+  <table id="myTable">
+    <tr class="header">
+      <th style="width:20%; text-align:center;">Name</th>
+      <th style="width:20%; text-align:center;">Nationality</th>
+      <th style="width:20%; text-align:center;">Team</th>
+      <th style="width:15%; text-align:center;">Position</th>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/kylian.webp" width=50px height=50px alt=Mbappe> 1) Kylian Mbappé <a href="https://www.eurosport.com/football/kylian-mbappe_prs440181/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://cdn.britannica.com/82/682-004-F0B47FCB/Flag-France.jpg" width=90px height=50px alt=France title="France"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png" width=70px height=60px alt=PSG title="Paris Saint-Germain"></td>
+      <td title="Striker" style=" text-align:center;">ST</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/bruyne.webp" width=50px height=50px alt=Bruyne> 2) Kevin De Bruyne <a href="https://www.eurosport.com/football/kevin-de-bruyne_prs205363/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png" width=90px height=50px alt=German title="German"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png" width=70px height=60px alt=MC title="Manchester City"></td>
+      <td title="Central Midfielder" style="text-align:center;">CM</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/lewan.webp" width=50px height=50px alt=Lewan> 3) R. Lewandowski <a href="https://www.eurosport.com/football/robert-lewandowski_prs141648/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1200px-Flag_of_Poland.svg.png" width=90px height=50px alt=Poland title="Poland"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" width=70px height=60px alt=Barcelona title="Barcelona"></td>
+      <td title="Striker" style="text-align:center;">ST</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/benzema.webp" width=50px height=50px alt=Benzema> 4) Karim Benzema <a href="https://www.eurosport.com/football/karim-benzema_prs45879/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://cdn.britannica.com/82/682-004-F0B47FCB/Flag-France.jpg" width=90px height=50px alt=France title="France"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png" width=70px height=70px alt=RM title="Real Madrid CF"></td>
+      <td title="Center Forward" style="text-align:center;">CF</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/messi.webp" width=50px height=50px alt=Messi> 5) Lionel Messi <a href="https://www.eurosport.com/football/lionel-messi_prs206833/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg" width=90px height=50px alt=Argentina title="Argentina"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png" width=70px height=60px alt=PSG title="Paris Saint-Germain"></td>
+      <td title="Central Attacking Midfielder" style="text-align:center;">CAM</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/salah.webp" width=50px height=50px alt=Salah> 6) Mohamed Salah <a href="https://www.eurosport.com/football/mohamed-salah_prs235035/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/2560px-Flag_of_Egypt.svg.png" width=90px height=50px alt=Egypt title="Egypt"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png" width=70px height=70px alt=Liverpool title="Liverpool"></td>
+      <td title="Right Wing" style="text-align:center;">RW</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/courtois.webp" width=50px height=50px alt=Courtois> 7) T. Courtois <a href="https://www.eurosport.com/football/thibaut-courtois_prs205447/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Belgium_%28civil%29.svg/255px-Flag_of_Belgium_%28civil%29.svg.png" width=90px height=50px alt=Belgium title="Belgium"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png" width=70px height=70px alt=RM title="Real Madrid CF"></td>
+      <td title="Goal-Keeper" style="text-align:center;">GK</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/neuer.webp" width=50px height=50px alt=Neuer> 8) Manuel Neuer <a href="https://www.eurosport.com/football/manuel-neuer_prs54520/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png" width=90px height=50px alt=German title="German"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg/1200px-FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg.png" width=70px height=70px alt=Bayern title="FC Bayern München"></td>
+      <td title="Goal-Keeper" style="text-align:center;">GK</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/haaland.webp" width=50px height=50px alt=Haaland> 9) Erling Haaland <a href="https://www.eurosport.com/football/erling-haaland_prs446061/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/2560px-Flag_of_Norway.svg.png" width=90px height=50px alt=Norway title="Norway"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png" width=70px height=60px alt=MC title="Manchester City"></td>
+      <td title="Striker" style="text-align:center;">ST</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/allisson.webp" width=50px height=50px alt=Alisson> 10) Alisson <a href="https://www.eurosport.com/football/alisson_prs312700/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/640px-Flag_of_Brazil.svg.png" width=90px height=50px alt=Brazil title="Brazil"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png" width=70px height=70px alt=Liverpool title="Liverpool"></td>
+      <td title="Goal-Keeper" style="text-align:center;">GK</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/kimich.webp" width=50px height=50px alt=Joshua> 11) Joshua Kimmich <a href="https://www.eurosport.com/football/joshua-kimmich_prs361053/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png" width=90px height=50px alt=German title="German"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg/1200px-FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg.png" width=70px height=70px alt=Bayern title="FC Bayern München"></td>
+      <td title="Central Defensive Midfielder" style="text-align:center;">CDM</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/ederson.webp" width=50px height=50px alt=Ederson> 12) Ederson <a href="https://www.eurosport.com/football/ederson_prs328212/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/640px-Flag_of_Brazil.svg.png" width=90px height=50px alt=Brazil title="Brazil"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png" width=70px height=60px alt=MC title="Manchester City"></td>
+      <td title="Goal-Keeper" style="text-align:center;">GK</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/mane.webp" width=50px height=50px alt=Mane> 13) Sadio Mané <a href="https://www.eurosport.com/football/sadio-mane_prs299809/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://cdn.britannica.com/70/5070-004-2963C5E1/Flag-Senegal.jpg" width=90px height=50px alt=Senegal title="Senegal"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg/1200px-FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg.png" width=70px height=70px alt=Bayern title="FC Bayern München"></td>
+      <td title="Left Midfield" style="text-align:center;">LM</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/virgil.webp" width=50px height=50px alt=VanDijk> 14) Virgil van Dijk <a href="https://www.eurosport.com/football/virgil-van-dijk_prs276965/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png" width=90px height=50px alt=Netherland title="Netherlands"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png" width=70px height=70px alt=Liverpool title="Liverpool"></td>
+      <td title="Centre-Back" style="text-align:center;">CB</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/kane.webp" width=50px height=50px alt=Kane> 15) Harry Kane <a href="https://www.eurosport.com/football/harry-kane_prs222117/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/1280px-Flag_of_England.svg.png" width=90px height=50px alt=England title="England"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tottenham_Hotspur.svg/800px-Tottenham_Hotspur.svg.png" width=70px height=70px alt=Spurs title="Tottenham Hotspur"></td>
+      <td title="Striker" style="text-align:center;">ST</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/oblak.webp" width=50px height=50px alt=Oblak> 16) Jan Oblak <a href="https://www.eurosport.com/football/jan-oblak_prs252360/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Flag_of_Slovenia.svg/1200px-Flag_of_Slovenia.svg.png" width=90px height=50px alt=Slovenia title="Slovenia"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Atletico_Madrid_2017_logo.svg/1200px-Atletico_Madrid_2017_logo.svg.png" width=70px height=70px alt=Atletico title="Atlético de Madrid"></td>
+      <td title="Goal-Keeper" style="text-align:center;">GK</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/casemiro.webp" width=50px height=50px alt=Casemiro> 17) Casemiro <a href="https://www.eurosport.com/football/casemiro_prs249811/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/640px-Flag_of_Brazil.svg.png" width=90px height=50px alt=Brazil title="Brazil"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/id/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png" width=70px height=70px alt=MU title="Manchester United"></td>
+      <td title="Central Defensive Midfielder" style="text-align:center;">CDM</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/son.webp" width=50px height=50px alt=Son> 18) Heung Min Son <a href="https://www.eurosport.com/football/heung-min-son_prs246818/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/255px-Flag_of_South_Korea.svg.png" width=90px height=50px alt=Korea title="South Korea"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tottenham_Hotspur.svg/800px-Tottenham_Hotspur.svg.png" width=70px height=70px alt=Spurs title="Tottenham Hotspur"></td>
+      <td title="Left Winger" style="text-align:center;">LW</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/neymar.webp" width=50px height=50px alt=Neymar> 19) Neymar Jr <a href="https://www.eurosport.com/football/neymar_prs189167/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/640px-Flag_of_Brazil.svg.png" width=90px height=50px alt=Brazil title="Brazil"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png" width=70px height=60px alt=PSG title="Paris Saint-Germain"></td>
+      <td title="Left Winger" style="text-align:center;">LW</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/dias.webp" width=50px height=50px alt=Dias> 20) Rúben Dias <a href="https://www.eurosport.com/football/ruben-dias_prs445135/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/255px-Flag_of_Portugal.svg.png" width=90px height=50px alt=Portugal title="Portugal"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png" width=70px height=60px alt=MC title="Manchester City"></td>
+      <td title="Centre-Back" style="text-align:center;">CB</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/donna.webp" width=50px height=50px alt=Donna> 21) G. Donnarumma <a href="https://www.eurosport.com/football/gianluigi-donnarumma_prs419222/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/255px-Flag_of_Italy.svg.png" width=90px height=50px alt=Italy title="Italy"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png" width=70px height=60px alt=PSG title="Paris Saint-Germain"></td>
+      <td title="Goal-Keeper" style="text-align:center;">GK</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/silva.webp" width=50px height=50px alt=Silva> 22) Bernardo Silva <a href="https://www.eurosport.com/football/bernardo-silva_prs361956/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/255px-Flag_of_Portugal.svg.png" width=90px height=50px alt=Portugal title="Portugal"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png" width=70px height=60px alt=MC title="Manchester City"></td>
+      <td title="Central Attacking Midfielder" style="text-align:center;">CAM</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/kante.webp" width=50px height=50px alt=Kante> 23) N. Kanté <a href="https://www.eurosport.com/football/n-golo-kante_prs313635/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://cdn.britannica.com/82/682-004-F0B47FCB/Flag-France.jpg" width=90px height=50px alt=France title="France"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/1200px-Chelsea_FC.svg.png" width=70px height=60px alt=Chelsea title="Chelsea"></td>
+      <td title="Central Defensive Midfielder" style="text-align:center;">CDM</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/cancelo.webp" width=50px height=50px alt=Cancelo> 24) João Cancelo <a href="https://www.eurosport.com/football/joao-cancelo_prs358288/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/255px-Flag_of_Portugal.svg.png" width=90px height=50px alt=Portugal title="Portugal"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png" width=70px height=60px alt=MC title="Manchester City"></td>
+      <td title="Linebackers" style="text-align:center;">LB</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/marqui.webp" width=50px height=50px alt=Marquinhos> 25) Marquinhos <a href="https://www.eurosport.com/football/marquinhos_prs313856/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/640px-Flag_of_Brazil.svg.png" width=90px height=50px alt=Brazil title="Brazil"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png" width=70px height=60px alt=PSG title="Paris Saint-Germain"></td>
+      <td title="Centre-Back" style="text-align:center;">CB</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/navas.webp" width=50px height=50px alt=Navas> 26) Keylor Navas <a href="https://www.eurosport.com/football/keylor-navas_prs76912/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Costa_Rica.svg/255px-Flag_of_Costa_Rica.svg.png" width=90px height=50px alt=Costa title="Costa Rica"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/1200px-Paris_Saint-Germain_F.C..svg.png" width=70px height=60px alt=PSG title="Paris Saint-Germain"></td>
+      <td title="Goal-Keeper" style="text-align:center;">GK</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/stegen.webp" width=50px height=50px alt=Stegen> 27) M. ter Stegen <a href="https://www.eurosport.com/football/marc-andre-ter-stegen_prs220045/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png" width=90px height=50px alt=German title="German"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" width=70px height=60px alt=Barcelona title="Barcelona"></td>
+      <td title="Goal-Keeper" style="text-align:center;">GK</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/kroos.webp" width=50px height=50px alt=Toni> 28) Toni Kroos <a href="https://www.eurosport.com/football/toni-kroos_prs120480/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png" width=90px height=50px alt=German title="German"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png" width=70px height=70px alt=RM title="Real Madrid CF"></td>
+      <td title="Central Midfielder" style="text-align:center;">CM</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/modric.webp" width=50px height=50px alt=Modric> 29) Luka Modrić <a href="https://www.eurosport.com/football/luka-modric_prs85897/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/2560px-Flag_of_Croatia.svg.png" width=90px height=50px alt=Croatia title="Croatia"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png" width=70px height=70px alt=RM title="Real Madrid CF"></td>
+      <td title="Central Midfielder" style="text-align:center;">CM</td>
+    </tr>
+    <tr>
+      <td><img src="assets/img/player/ronaldo.webp" width=50px height=50px alt=Ronaldo> 30) Cristiano Ronaldo <a href="https://www.eurosport.com/football/cristiano-ronaldo_prs27317/person.shtml" target="_blank"> (Profile)</a></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/255px-Flag_of_Portugal.svg.png" width=90px height=50px alt=Portugal title="Portugal"></td>
+      <td style="text-align:center;"> <img src="https://upload.wikimedia.org/wikipedia/en/9/9d/Logo_Al-Nassr.png" width=70px height=70px alt=Nassr title="Al Nassr"></td>
+      <td title="Striker" style="text-align:center;">ST</td>
+    </tr>
+  </table>
+
+
+
+  <br><br>
+
+  <!-- ======= PlayerFilter Section ======= -->
+
+  <!-- ======= TopScorer Section ======= -->
+
+  <div style="text-align: center; background-color: rgba(255, 255, 255, 0.9);">
+  <h1 style="margin: 0; font-size: 50px; font-weight: bold;">TOP SCORER / ASSISTS / CARDS</h1>
+</div><br>
+  <div id="scoreaxis-widget-3808d" style="border-width:1px; border-color:rgba(0, 0, 0, 0.15); border-style:solid; border-radius:8px; padding:10px; background:rgb(255, 255, 255); width:100%; background-color: #ffffff; width: 90%; margin: 0 auto;">
+    <iframe id="Iframe" src="https://www.scoreaxis.com/widget/league-top-players/8?autoHeight=1&amp;playersNumber=10&amp;bodyBackground=%23ffffff&amp;textColor=%23000000&amp;inst=3808d" style="width:100%; border:none; transition:all 300ms ease">
+    </iframe>
+    <script>
+    window.addEventListener("DOMContentLoaded",event=>{window.addEventListener("message",event=>{if(event.data.appHeight&&"3808d"==event.data.inst){let container=document.querySelector("#scoreaxis-widget-3808d iframe");container&&(container.style.height=parseInt(event.data.appHeight)+"px")}},!1)});
+  </script>
+</div>
+
+  <br>
+
+  <!--Back to top button-->
+  <style>
+  #back-to-top-btn {
+  position: absolute;
+  left: 50%; /* centers the button horizontally */
+  transform: translateX(-50%);
+  background-color: #ff0000; /* or background-image: url(image.jpg); */
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  }
+
+  #back-to-top-btn:hover {
+  background-color: #ff4d4d;
+  cursor: pointer;
+  }
+  </style>
+  <button onclick="topFunction()" id="back-to-top-btn" title="Go to top">Back To Top</button><br><br>
+
+  
+
+<br>
+</div>
+  </body>
+
+  <!-- ======= TopScorer Section ======= -->
+<!-- ======= Clients Section ======= -->
+<section id="clients" class="clients">
+  <div class="container" data-aos="zoom-in">
+
+    <div class="row d-flex align-items-center">
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/adidas-logo-png-2362.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/2022-42094.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/preebok-logo-png-7033.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/puma-logo-png-1237.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/nike-logo-39975.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/espn-png-logo-4142.png" class="img-fluid" alt="">
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Clients Section -->
+  <!-- Contact Section -->
+
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <span>Contact</span>
+        <h2>Contact</h2>
+        <p>For more inquiry please contact us using the means provided below.</p>
+      </div>
+
+      <div class="row" data-aos="fade-up">
+        <div class="col-lg-6">
+          <div class="info-box mb-4">
+            <i class="bx bx-map"></i>
+            <h3>Our Address</h3>
+            <p>1.6,Blok A, Mahallah ALi, IIUM GOMBAK, Selangor, Malaysia, Asia, Bumi, Bima sakti.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="info-box  mb-4">
+            <i class="bx bx-envelope"></i>
+            <h3>Email Us</h3>
+            <p>FabriomarRaidah@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="info-box  mb-4">
+            <i class="bx bx-phone-call"></i>
+            <h3>Call Us</h3>
+            <p>+60-12-345-6789</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row" data-aos="fade-up">
+
+        <div class="col-lg-6 ">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995.8523130375994!2d101.73770527821696!3d3.2480048532092733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc39eb4ff63711%3A0x2bcb3c32a6ef526d!2sMahallah%20Ali%20PG%20Block!5e0!3m2!1sen!2smy!4v1673877870604!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="col-lg-6">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Contact Section -->
+  </section>
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+ 
+ <script>
+  function myFunction() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+  </script>
+  <script>
+//Get the button:
+mybutton = document.getElementById("back-to-top-btn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+</body>
+
+</html>

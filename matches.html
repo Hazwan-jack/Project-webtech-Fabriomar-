@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Fabriomar- Matches</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+  <!-- Favicons -->
+  <link href="assets/img/Fabriomar.png" rel="icon">
+  <link href="assets/img/Fabriomar.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+  <style>
+    .matches .transbox {
+        float: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        background-color: black;
+        border: 1px solid black;
+        opacity: 0.7;
+    }
+    
+  
+    /* Style the logos and team names */
+    .matches img {
+        width: 100px;
+        height: 100px;
+    }
+    .matches h2 {
+        color: white;
+        text-align: center;
+    }
+    
+    /* Style the "VS" and remind me button */
+    .matches h1 mark {
+        background-color: yellow;
+        color: black;
+    }
+    .matches .button {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+  </style>
+  
+</head>
+
+<body>
+
+  
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Fabriomar</a></h1>
+      
+
+      <nav id="navbar" class="navbar">
+        <ul>
+            <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+            <li><a class="nav-link scrollto active" href="matches.html">Matches</a></li>
+            <li><a class="nav-link scrollto" href="shop.html">Shop</a></li>
+            <li><a class="nav-link scrollto" href="player.html">Player</a></li>
+            <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+
+
+     <!-- Addition snipped code --> 
+    <!-- jQuery 1.8 or later, 33 KB --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+
+
+
+  </header><!-- End Header -->
+
+
+  <main id="main">
+
+
+
+<!-- ======= Matches Section ======= -->
+
+ 
+
+<section id="matches" class="matches" style="background-image: url('assets/img/matches1/footballfield.jpg');  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;" >
+
+  <aside class="transbox">
+
+        <!-- League table -->
+        <div div id="scoreaxis-widget-ad9ca" style="border-width:1px;border-color:rgba(0, 0, 0, 0.15);border-style:solid;border-radius:8px;padding:10px;background:rgb(255, 255, 255);width:100%;background-color:#000000" data-reactroot=""><iframe id="Iframe" src="https://www.scoreaxis.com/widget/standings-widget/8?borderColor=%23333333&amp;bodyBackground=%23000000&amp;textColor=%23ffffff&amp;inst=ad9ca" style="width:100%;border:none;transition:all 300ms ease"></iframe><script>window.addEventListener("DOMContentLoaded",event=>{window.addEventListener("message",event=>{if(event.data.appHeight&&"ad9ca"==event.data.inst){let container=document.querySelector("#scoreaxis-widget-ad9ca iframe");container&&(container.style.height=parseInt(event.data.appHeight)+"px")}},!1)});</script></div>
+
+        <div class="column"> <!-- Madrid Logo -->
+            <img src="assets/img/matches1/madridLogo.png" alt="madridLogo" style="object-fit:contain;">
+            <h2>MADRID</h2>
+        </div>
+
+        <div class="column"> <!-- VS -->
+            <h1><mark>FINAL</mark></h1>
+            <h2><br>VS</h2>
+            <input type="button" class="button" id="remindMe" value=" &#128276; Remind Me" onclick="startTimer()">
+        </div>
+
+        <div class="column"> <!-- Barca Logo -->
+          <img src="assets/img/matches1/barcaLogo.png" alt="barcelonaLogo" style="object-fit: contain;">
+          <h2>BARCELONA</h2>
+        </div>
+   
+  </aside>
+
+      
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 18, 2024 15:37:25").getTime();
+
+function startTimer() {
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+    // Get today's date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in the remindMe button
+    document.getElementById("remindMe").value =  days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("remindMe").value = "EXPIRED"; 
+    }
+  }, 1000);
+}
+
+</script>
+
+</section><!-- End Matches -->
+<!-- ======= Clients Section ======= -->
+<section id="clients" class="clients">
+  <div class="container" data-aos="zoom-in">
+
+    <div class="row d-flex align-items-center">
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/adidas-logo-png-2362.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/2022-42094.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/preebok-logo-png-7033.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/puma-logo-png-1237.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/nike-logo-39975.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <img src="assets/img/clients/espn-png-logo-4142.png" class="img-fluid" alt="">
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Clients Section -->
+<!-- ======= Highlights Section ======= -->
+<section id="highlights" class="highlights" style="background-color: #333;height: 1100px;">
+
+  <h1 style="text-align: center; align-items: center;row-gap: 10px;color: white; margin-bottom: 50px;">HIGHLIGHTS</h1> <br><br><br>
+  
+    <div class="main" style="display: flex; align-items: center; justify-content: center; height: 100vh;">
+      <div class="grid" style="display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 20px; row-gap: 10px;">
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/PSanJ5swYBM"></iframe>
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/OUKGsb8CpF8"></iframe>
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/qufVRCCjU-E"></iframe>
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/2MZxzZOd308"></iframe>
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/V_qxDN860lk"></iframe>
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/Bax8CjqC1QA"></iframe>
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/uhJZsdhoxbg"></iframe>
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/Ddp4pKTpsMU"></iframe>
+          <iframe width="300" height="300" src="https://www.youtube.com/embed/lQlMLMZNm2Q"></iframe>
+      </div>
+  </div>
+  
+</section>
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<div id="preloader"></div>
+
+<!-- Contact Section -->
+
+<section id="contact" class="contact">
+  <div class="container">
+
+    <div class="section-title">
+      <span>Contact</span>
+      <h2>Contact</h2>
+      <p>For more inquiry please contact us using the means provided below.</p>
+    </div>
+
+    <div class="row" data-aos="fade-up">
+      <div class="col-lg-6">
+        <div class="info-box mb-4">
+          <i class="bx bx-map"></i>
+          <h3>Our Address</h3>
+          <p>1.6,Blok A, Mahallah ALi, IIUM GOMBAK, Selangor, Malaysia, Asia, Bumi, Bima sakti.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="info-box  mb-4">
+          <i class="bx bx-envelope"></i>
+          <h3>Email Us</h3>
+          <p>FabriomarRaidah@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="info-box  mb-4">
+          <i class="bx bx-phone-call"></i>
+          <h3>Call Us</h3>
+          <p>+60-12-345-6789</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row" data-aos="fade-up">
+
+      <div class="col-lg-6 ">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995.8523130375994!2d101.73770527821696!3d3.2480048532092733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc39eb4ff63711%3A0x2bcb3c32a6ef526d!2sMahallah%20Ali%20PG%20Block!5e0!3m2!1sen!2smy!4v1673877870604!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="col-lg-6">
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Contact Section -->
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  </main><!-- End #main -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
